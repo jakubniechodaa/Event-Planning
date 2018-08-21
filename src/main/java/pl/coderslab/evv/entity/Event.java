@@ -44,6 +44,8 @@ public class Event {
     //@DateTimeFormat(pattern = "dd/MM/yyyy")
     @NotNull
     private Date date;
+    private Date till;
+
 
 //    @LazyCollection(LazyCollectionOption.FALSE)
 //    @OneToMany

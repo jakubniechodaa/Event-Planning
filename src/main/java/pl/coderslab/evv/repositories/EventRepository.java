@@ -19,6 +19,10 @@ public	interface EventRepository extends JpaRepository<Event, Long>, EventCustom
 
     @Query(value = "SELECT * FROM events WHERE date < CURDATE()  ORDER BY date ASC;", nativeQuery = true)
     List<Event> findPast();
+
+    @Query(value = "SELECT * FROM events WHERE date <= CURDATE() AND till >= CURDATE()", nativeQuery = true)
+    List<Event> findFromTill();
+
     Event findEventById(long id);
     List <Event> findEventsByVenueId(long id);
     List <Event> findEventsByDate(Date date);

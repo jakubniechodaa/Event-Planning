@@ -164,8 +164,9 @@ public class EventController {
 
     @RequestMapping("/today")
     public String processTodayEvents(Model model) {
-        Date date = new java.sql.Date(Calendar.getInstance().getTime().getTime());
-        List <Event> today = eventRepository.findEventsByDate(date);
+        //Date date = new java.sql.Date(Calendar.getInstance().getTime().getTime());
+        //List <Event> today = eventRepository.findEventsByDate(date);
+        List<Event> today = eventRepository.findFromTill();
         model.addAttribute("today", today);
 
         return "events/today";

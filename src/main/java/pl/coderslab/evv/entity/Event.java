@@ -111,6 +111,13 @@ public class Event {
         this.date = date;
     }
 
+    public Date getTill() {
+        return till;
+    }
+
+    public void setTill(Date till) {
+        this.till = till;
+    }
 
     @Override
     public String toString() {

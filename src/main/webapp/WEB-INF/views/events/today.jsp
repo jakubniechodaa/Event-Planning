@@ -10,10 +10,10 @@
 <div class="container">
     <h5>events today: ${today.size()}</h5>
 <table>
-    <th>name</th>  <th>date</th>  <th>details</th>
+    <th>name</th>  <th>date</th> <th>till</th>  <th>details</th>
 <c:forEach items="${today}" var="td">
     <tr>
-        <td>${td.name}</td><td>${td.date}</td><td><a href="/event/details/${td.id}">click</a></td>
+        <td>${td.name}</td><td>${td.date}</td><td>${td.till}</td><td><a href="/event/details/${td.id}">click</a></td>
     </tr>
 </c:forEach>
 </table>

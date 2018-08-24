@@ -46,6 +46,10 @@
         <td>date:</td><td><form:input type="date" path="date" name="date" /></td>
         <form:errors path="date" cssStyle="color: red" element="td"/>
     </tr>
+    <tr>
+        <td>till:</td><td><form:input type="date" path="till" name="till" /></td>
+        <form:errors path="till" cssStyle="color: red" element="td"/>
+    </tr>
 
 
     <tr><td><input type="submit" value="Save"></td></tr>

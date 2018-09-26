@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface EventCustom {
 
-//    public List<Event> eventsGreaterThanToday(LocalDate date);
+
     public Event findByIdWithAuthors(long id);
 
 }

@@ -1,10 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: karussia
-  Date: 7/5/18
-  Time: 11:07 PM
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -12,9 +6,6 @@
     <title>panel</title>
 </head>
 <body>
-
-
-<%--<span class="marquee">music. festivals. clubs. </span>--%>
 
 <div class="wrapper">
 <marquee bg="white" style="color:white;width:540px;" onmouseover="this.stop()" onmouseout="this.start()""><br /> <b>

@@ -62,7 +62,7 @@ public class VenueController {
         venueRepository.save(venue);
         return "places/added";
     }
-   // @RequestMapping("/addedevent")
+
 
 
 }
